@@ -1,0 +1,137 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	height: 100vh;
+	display: grid;
+	grid-template-rows: 70px 1fr 45px;
+	row-gap: 5px;
+}
+
+.header,
+.footer {
+	display: grid;
+	place-items: center;
+	width: 100%;
+	background-color: rgba(91, 91, 91, 0.611);
+	color: white;
+	box-shadow: 0px 5px 16px -2px rgba(0, 0, 0, 0.805);
+	font-size: 1.5rem;
+}
+
+.main {
+	display: grid;
+	grid-template-columns: 1fr 5fr;
+	column-gap: 5px;
+	height: 100vh;
+	background-color: aliceblue;
+	background-color: rgba(114, 94, 94, 0.28);
+	
+}
+
+.aside {
+	display: grid;
+	background-color: rgba(114, 94, 94, 0.4);
+	grid-template-rows: 60px 1fr 50px;
+	row-gap: 3px;
+	height: 80vh;
+}
+
+.p_nav{
+	display: grid;
+	place-items: center;
+	width: 100%;
+	background-color: rgba(91, 91, 91, 0.611);
+	color: white;
+	box-shadow: 0px 5px 16px -2px rgba(0, 0, 0, 0.429);
+	font-size: 1.5rem;
+}
+
+.lists {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.list {
+	background-color: rgba(71, 147, 240, 0.712);
+	width: 70%;
+	height: 40px;
+	font-size: 25px;
+	font-weight: bold;
+	display: grid;
+	place-items: center;
+	border-radius: 10px;
+	color: white;
+
+}
+
+.add_btn {
+	background-color: aliceblue;
+	display: grid;
+	place-items: center;
+}
+
+.main-section {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 5px;
+
+}
+
+.todos {
+	margin: 5px;
+	padding: 5px;
+	border-radius: 10px;
+	background-color: azure;
+	column-gap: 5px;
+	display: grid;
+	height: 100px;
+	grid-template-columns: repeat(3, 1fr);
+	font-weight: bold;
+	background-color: rgba(94, 114, 111, 0.608);
+	box-shadow: 5px 0px 6px 3px rgba(255, 255, 255, 0.83);
+	border-right: 13px solid rgba(5, 18, 254, 0.742);
+	
+}
+.todos:hover{
+	box-shadow: 5px 0px 6px 3px rgba(180, 180, 180, 0.83);
+
+}
+
+.todo_1,
+.todo_2,
+.todo_3 {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: flex-start;
+}
+
+.detail {
+	height: 40%;
+	width: 85%;
+	border: none;
+    outline: none;
+	border-radius: 5px;
+	background-color: rgba(94, 114, 111, 0.608);
+
+}
+.add_btn:hover,
+.list:hover,
+.detail:hover{
+	background-color: rgba(58, 58, 58, 0.527);
+	color: rgb(255, 255, 255);
+	box-shadow: 5px 8px 6px -7px rgba(0, 0, 0, 0.47);
+}
+
+.footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 45px;
+}
