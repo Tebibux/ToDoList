@@ -29,7 +29,7 @@
 	height: 100vh;
 	background-color: aliceblue;
 	background-color: rgba(114, 94, 94, 0.28);
-	
+
 }
 
 .aside {
@@ -40,7 +40,7 @@
 	height: 80vh;
 }
 
-.p_nav{
+.p_nav {
 	display: grid;
 	place-items: center;
 	width: 100%;
@@ -96,11 +96,12 @@
 	background-color: rgba(94, 114, 111, 0.608);
 	box-shadow: 5px 0px 6px 3px rgba(255, 255, 255, 0.83);
 	border-right: 13px solid rgba(5, 18, 254, 0.742);
-	
-}
-.todos:hover{
-	box-shadow: 5px 0px 6px 3px rgba(180, 180, 180, 0.83);
 
+}
+
+.todos:hover {
+	box-shadow: 5px 0px 6px 3px rgba(180, 180, 180, 0.83);
+	color: rgba(223, 215, 215, 0.812);
 }
 
 .todo_1,
@@ -116,14 +117,15 @@
 	height: 40%;
 	width: 85%;
 	border: none;
-    outline: none;
+	outline: none;
 	border-radius: 5px;
 	background-color: rgba(94, 114, 111, 0.608);
 
 }
+
 .add_btn:hover,
 .list:hover,
-.detail:hover{
+.detail:hover {
 	background-color: rgba(58, 58, 58, 0.527);
 	color: rgb(255, 255, 255);
 	box-shadow: 5px 8px 6px -7px rgba(0, 0, 0, 0.47);
