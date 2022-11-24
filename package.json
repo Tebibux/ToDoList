@@ -1,4 +1,22 @@
 {
+  "name": "todolist",
+  "description": "TOP: ToDoList",
+  "version": "1.0.0",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tebibux/ToDoList.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tebibux/ToDoList/issues"
+  },
+  "homepage": "https://github.com/Tebibux/ToDoList#readme",
   "devDependencies": {
     "html-webpack-plugin": "^5.5.0",
     "webpack": "^5.75.0",
@@ -7,6 +25,7 @@
   "dependencies": {
     "latest": "^0.2.0",
     "n": "^9.0.1",
+    "npm": "^9.1.2",
     "stable": "^0.1.8"
   }
 }
