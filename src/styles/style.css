@@ -107,6 +107,7 @@
 }
 .deleteIt > div{
 	transform: rotate(-90deg);
+	margin-left: -11px;
 }
 .deleteIt:hover{
 	color: red;

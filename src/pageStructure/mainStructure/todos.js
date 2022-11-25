@@ -44,6 +44,13 @@ function todoDom() {
 	todoContainer.appendChild(todo_3);// appending the todo_1 which include title and
 	//  priority of the to do element.
 
+
+	const deleteItD = new DomMaker('div', 'deleteIt', '', '', ``);
+	const deleteIt = deleteItD.maker();
+	const deleteD = new DomMaker('div', '', '' , '', 'Delete')
+	deleteIt.appendChild(deleteD.maker())
+
+	todoContainer.appendChild(deleteIt)
 	return todoContainer;
 }
 
