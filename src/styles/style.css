@@ -24,7 +24,7 @@
 
 .main {
 	display: grid;
-	grid-template-columns: 1fr 5fr;
+	grid-template-columns: 1.2fr 5fr;
 	column-gap: 5px;
 	height: 100vh;
 	background-color: aliceblue;

@@ -10,7 +10,7 @@ class DomMaker{
 		const domElement = document.createElement(`${this.type}`);
 		domElement.className = `${this.className}`;
 		domElement.id = `${this.Id}`;
-		domElement.innerHTML = `${this.InHTML}`;
+		// domElement.appendChild(this.InHTML);
 		domElement.innerText = `${this.InText}`;
 		return domElement
 	}
