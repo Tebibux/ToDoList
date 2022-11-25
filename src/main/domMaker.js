@@ -1,5 +1,5 @@
 class DomMaker{
-	constructor(type, className, Id, InHTML, InText){
+	constructor(type, className='', Id='', InHTML='', InText=''){
 		this.type = type;
 		this.className = className;
 		this.Id = Id;
