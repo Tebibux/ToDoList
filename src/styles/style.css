@@ -27,11 +27,15 @@
 	grid-template-columns: 1.2fr 5fr;
 	column-gap: 5px;
 	height: 100vh;
-	background-color: aliceblue;
 	background-color: rgba(114, 94, 94, 0.28);
 
 }
-
+.main-two{
+	display: grid;
+	place-items: center;
+	height: 100vh;
+	background-color: rgba(114, 94, 94, 0.28);
+}
 .aside {
 	display: grid;
 	background-color: rgba(114, 94, 94, 0.4);
