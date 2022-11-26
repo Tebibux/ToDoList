@@ -1,7 +1,7 @@
 import './styles/style.css';
-import headerDom from "./pageStructure/pageHeader";
-import footerDom from './pageStructure/pageFooter';
-import mainDom from './pageStructure/pageMain';
+import headerDom from "./pageStructure/pageHeader"; // imports the header DOM
+import footerDom from './pageStructure/pageFooter'; // imports the footer DOM
+import mainDom from './pageStructure/pageMain'; // imports the main DOM
 
 
 function home() {
