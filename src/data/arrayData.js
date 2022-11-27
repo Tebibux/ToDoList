@@ -1,16 +1,17 @@
-import ToDoData from "./arrayObject";
+// exports an array that can be used to hold object data
+// of the todo list
+const hi = {
+	description:"sdf",
+	dueDate:"2022-11-02",
+	priority:"Medium",
+	title:"adsf"
+}
+const h2 = {
+	description:"sdf",
+	dueDate:"2022-11-02",
+	priority:"Medium",
+	title:"how come"
+}
 
-let date = new Date().toLocaleDateString();
-
-let todo1 = new ToDoData('To-high', 'Man you have to finish it sunday morning', date, 'High');
-let todo2 = new ToDoData('To-mid', 'Man you have to finish', date, 'Mid');
-let todo3 = new ToDoData('To-low', 'Man you have to', date, 'Low');
-
-const arrayData = [
-	todo1,
-	todo2,
-	todo3
-]
-
+const arrayData = [hi, h2]
 export default arrayData
-// console.log(date)

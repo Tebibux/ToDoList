@@ -15,7 +15,7 @@ function home() {
 	container.appendChild(headerDom());
 
 	// appends the main to the container
-	const main = mainDom();
+	let main = mainDom();
 	container.appendChild(main);
 	main.addEventListener("click", (e) => {
 		if (e.target.id === 'add_todo') {
@@ -39,22 +39,20 @@ function home() {
 					const inputDataObject = new ToDoData(title, description, date, priority);
 					// push the object to the array the data to the object first
 					arrayData.push(inputDataObject);
-					// and make the form invisible
-					main.innerHTML = '';
-					mainDom();
-					container.appendChild(main);
-					// call the main again
-					console.log(arrayData)
-					console.log(inputDataObject)
+					container.innerHTML = ''; // wash's all the element of the container
+					home();// recursively call home function
 				}
 
 			})
-
-}
+		}
+		if(e.target.id === 'detail'){
+			console.log(e.target.parentElement.parentElement.innerText)
+			// filter all the data and show in the display in the detail page.
+		}
 	})
 
 
-// appends the footer to the container	
-container.appendChild(footerDom());
+	// appends the footer to the container	
+	container.appendChild(footerDom());
 }
 export default home;

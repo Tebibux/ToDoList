@@ -20,7 +20,7 @@ function todoDom(arrayObj) {
 
 	const todoTowD = new DomMaker('div', 'todo_2', '', '', '');
 	const todo_2 = todoTowD.maker();
-	const detailD = new DomMaker('button', 'detail', '', '', 'Detail');
+	const detailD = new DomMaker('button', 'detail', 'detail', '', 'Detail');
 	const detail = detailD.maker();
 	todo_2.appendChild(detail); // appending the detail
 

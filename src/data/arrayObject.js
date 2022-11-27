@@ -1,3 +1,6 @@
+// ToDoData creates oject the holds 
+// data of the ToDo list
+
 class ToDoData {
 	constructor(title, description, dueDate, priority){
 		this.title = title;
