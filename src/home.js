@@ -3,8 +3,9 @@ import headerDom from "./pageStructure/pageHeader"; // imports the header DOM
 import footerDom from './pageStructure/pageFooter'; // imports the footer DOM
 import mainDom from './pageStructure/pageMain'; // imports the main DOM
 import addToDo from './pageStructure/mainStructure/addToDo'; // used to display the add todo page
-
-
+import ToDoData from './data/arrayObject';
+import arrayData from './data/arrayData';
+import todoDom from './pageStructure/mainStructure/todos';
 
 function home() {
 	const container = document.querySelector('.container');
@@ -19,6 +20,7 @@ function home() {
 	main.addEventListener("click", (e) => {
 		if (e.target.id === 'add_todo') {
 			main.innerHTML = '';
+			console.log(arrayData)
 			main.appendChild(addToDo());
 			main.classList.remove('main')
 			main.classList.add('main-two');
@@ -30,17 +32,29 @@ function home() {
 				var description = document.querySelector('#formDesc').value;
 				var date = document.querySelector('#formDate').value;
 				var priority = document.querySelector('#formPriority').value;
-				console.log(title + ' ' + description + ' ' + date + ' ' + priority)
-				// pass to the arrayData holder
-				// and make the form invisible
-				// call the main again
+				if (((title === ''))) return;
+				else {
+					// pass to the arrayData holder
+					// assign the data to the object first
+					const inputDataObject = new ToDoData(title, description, date, priority);
+					// push the object to the array the data to the object first
+					arrayData.push(inputDataObject);
+					// and make the form invisible
+					main.innerHTML = '';
+					mainDom();
+					container.appendChild(main);
+					// call the main again
+					console.log(arrayData)
+					console.log(inputDataObject)
+				}
+
 			})
 
-		}
+}
 	})
 
 
-	// appends the footer to the container	
-	container.appendChild(footerDom());
+// appends the footer to the container	
+container.appendChild(footerDom());
 }
 export default home;
