@@ -1,4 +1,4 @@
-// import './styles/style.css';
+import './styles/style.css';
 import home from './home';
 
 const container = document.querySelector('.container');

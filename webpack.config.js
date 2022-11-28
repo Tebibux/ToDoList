@@ -12,6 +12,7 @@ module.exports = {
 		filename: '[name].js',
 	},
 	plugins: [
+		// entry point
 		new HtmlWebpackPlugin({
 			title: 'To-Do-List',
 			filename: 'index.html',
