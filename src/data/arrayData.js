@@ -13,6 +13,7 @@
 // 	title:"how come"
 // }
 
-// const arrayData = [hi, h2]
+// const arrayData = [hi, h2] 
+// temporary test data
 const arrayData = []
 export default arrayData
