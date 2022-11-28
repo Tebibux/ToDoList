@@ -5,7 +5,7 @@ import mainDom from './pageStructure/pageMain'; // imports the main DOM
 import addToDo from './pageStructure/mainStructure/addToDo'; // used to display the add todo page
 import ToDoData from './data/arrayObject';
 import arrayData from './data/arrayData';
-import todoDom from './pageStructure/mainStructure/todos';
+// import todoDom from './pageStructure/mainStructure/todos';
 
 function home() {
 	const container = document.querySelector('.container');
